@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "cap-recorder",
   "title": "Cap Recorder",
-  "description": "Effortless, instant screen sharing.",
+  "description": "Raycast shortcuts for Cap Recorder",
   "icon": "cap-icon.png",
   "author": "ItsEeleeya",
   "keywords": [
@@ -17,8 +17,8 @@
     {
       "name": "start-recording",
       "title": "Start Recording",
-      "description": "Start a Cap recording.",
-      "mode": "no-view"
+      "description": "Choose the Camera and Microphone to start a Cap recording with.",
+      "mode": "view"
     },
     {
       "name": "stop-recording",

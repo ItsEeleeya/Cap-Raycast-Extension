@@ -1,0 +1,124 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Cap-Raycast-Extension}/swift",
+            "name": "Debug cap-extension-helper (swift)",
+            "program": "${workspaceFolder:Cap-Raycast-Extension}/swift/.build/debug/cap-extension-helper",
+            "preLaunchTask": "swift: Build Debug cap-extension-helper (swift)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Cap-Raycast-Extension}/swift",
+            "name": "Release cap-extension-helper (swift)",
+            "program": "${workspaceFolder:Cap-Raycast-Extension}/swift/.build/release/cap-extension-helper",
+            "preLaunchTask": "swift: Build Release cap-extension-helper (swift)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Cap-Raycast-Extension}/swift",
+            "name": "Debug CustomName (swift)",
+            "program": "${workspaceFolder:Cap-Raycast-Extension}/swift/.build/debug/CustomName",
+            "preLaunchTask": "swift: Build Debug CustomName (swift)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Cap-Raycast-Extension}/swift",
+            "name": "Release CustomName (swift)",
+            "program": "${workspaceFolder:Cap-Raycast-Extension}/swift/.build/release/CustomName",
+            "preLaunchTask": "swift: Build Release CustomName (swift)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Cap-Raycast-Extension}/swift",
+            "name": "Debug CapExtensionHelper (swift)",
+            "program": "${workspaceFolder:Cap-Raycast-Extension}/swift/.build/debug/CapExtensionHelper",
+            "preLaunchTask": "swift: Build Debug CapExtensionHelper (swift)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Cap-Raycast-Extension}/swift",
+            "name": "Release CapExtensionHelper (swift)",
+            "program": "${workspaceFolder:Cap-Raycast-Extension}/swift/.build/release/CapExtensionHelper",
+            "preLaunchTask": "swift: Build Release CapExtensionHelper (swift)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Cap-Raycast-Extension}/swift/helper",
+            "name": "Debug CapExtensionHelper (swift/helper)",
+            "program": "${workspaceFolder:Cap-Raycast-Extension}/swift/helper/.build/debug/CapExtensionHelper",
+            "preLaunchTask": "swift: Build Debug CapExtensionHelper (swift/helper)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Cap-Raycast-Extension}/swift/helper",
+            "name": "Release CapExtensionHelper (swift/helper)",
+            "program": "${workspaceFolder:Cap-Raycast-Extension}/swift/helper/.build/release/CapExtensionHelper",
+            "preLaunchTask": "swift: Build Release CapExtensionHelper (swift/helper)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Cap-Raycast-Extension}/swift/cap-extension-helper",
+            "name": "Debug CapExtensionHelper (swift/cap-extension-helper)",
+            "program": "${workspaceFolder:Cap-Raycast-Extension}/swift/cap-extension-helper/.build/debug/CapExtensionHelper",
+            "preLaunchTask": "swift: Build Debug CapExtensionHelper (swift/cap-extension-helper)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:Cap-Raycast-Extension}/swift/cap-extension-helper",
+            "name": "Release CapExtensionHelper (swift/cap-extension-helper)",
+            "program": "${workspaceFolder:Cap-Raycast-Extension}/swift/cap-extension-helper/.build/release/CapExtensionHelper",
+            "preLaunchTask": "swift: Build Release CapExtensionHelper (swift/cap-extension-helper)"
+        }
+    ]
+}

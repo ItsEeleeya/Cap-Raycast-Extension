@@ -1,5 +1,5 @@
-import { notInstalled, launch } from "./cap";
+import { launchCap } from "./utils";
 
 export default async function Command() {
-  await launch("open-dashboard");
+  await launchCap("open-dashboard");
 }

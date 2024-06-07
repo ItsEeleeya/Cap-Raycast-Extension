@@ -1,5 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+
+
 # dependencies
 /node_modules
 
@@ -11,3 +13,10 @@ compiled_raycast_swift
 
 # misc
 .DS_Store
+
+# Swift
+.build
+/Packages
+xcuserdata/
+DerivedData/
+.netrc

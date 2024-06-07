@@ -1,7 +1,7 @@
-import { launch } from "./cap";
+import { launchCap } from "./utils";
 
 export default async function Command() {
-  await launch("stop-recording", {
+  await launchCap("stop-recording", {
     feedbackMessage: "Recording Stopped",
     feedbackType: "hud",
   });

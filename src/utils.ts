@@ -3,7 +3,7 @@ import { closeMainWindow, getApplications, Keyboard, open, showHUD, showToast, T
 const CAP_BUNDLE_ID = "so.cap.desktop";
 const CAP_LINK_PROTOCOL = "caprecorder://";
 
-export async function launch(
+export async function launchCap(
   command: string,
   options?: {
     params?: Record<string, string>;
@@ -11,7 +11,7 @@ export async function launch(
     feedbackType?: "toast" | "hud";
   },
 ) {
-  if (await notInstalled()) {
+  if (await capNotInstalled()) {
     return false;
   }
 
@@ -21,6 +21,7 @@ export async function launch(
   }
   await closeMainWindow({ clearRootSearch: true });
   open(uri);
+
   if (options?.feedbackMessage) {
     if (!options.feedbackType || options.feedbackType === "toast") {
       showToast({ style: Toast.Style.Success, title: options.feedbackMessage });
@@ -31,7 +32,7 @@ export async function launch(
   return true;
 }
 
-export async function notInstalled(showErrorToast = true) {
+async function capNotInstalled(showErrorToast = true) {
   const installled = (await getApplications()).filter((app) => app.bundleId === CAP_BUNDLE_ID).length >= 1;
 
   if (!installled && showErrorToast) {
