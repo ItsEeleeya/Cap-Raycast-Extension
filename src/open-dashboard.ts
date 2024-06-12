@@ -3,9 +3,9 @@ import { capNotInstalled, launchCap } from "./utils";
 
 export default async function Command() {
   if (await capNotInstalled(false)) {
-    await launchCap("open-dashboard");
+    open("https://cap.so/dashboard/");
     return;
   }
 
-  open("https://cap.so/dashboard/");
+  await launchCap("open-dashboard");
 }
