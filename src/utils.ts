@@ -32,7 +32,7 @@ export async function launchCap(
   return true;
 }
 
-async function capNotInstalled(showErrorToast = true) {
+export async function capNotInstalled(showErrorToast = true) {
   const installled = (await getApplications()).filter((app) => app.bundleId === CAP_BUNDLE_ID).length >= 1;
 
   if (!installled && showErrorToast) {
