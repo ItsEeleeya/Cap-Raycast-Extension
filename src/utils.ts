@@ -43,7 +43,7 @@ export async function capNotInstalled(showErrorToast = true) {
         title: "Install Cap",
         shortcut: Keyboard.Shortcut.Common.Open,
         onAction: () => {
-          open("https://cap.so/");
+          open("https://cap.so/download");
         },
       },
     });
