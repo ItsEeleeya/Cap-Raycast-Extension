@@ -1,4 +1,7 @@
-# Cap's Raycast Extension.
+<p align="center">
+  <img width="150" height="150" src="./assets/cap-icon.png" alt="Logo">
+</p>
+<h1 align="center"><b>Cap's Raycast Extension</b></h1>
 
 Currently supports:
 - Starting a new Cap with selected input devices
