@@ -43,7 +43,6 @@ export default function Command() {
 
   return (
     <Form
-      navigationTitle="Select Devices to Start Recording"
       isLoading={isFetchingDevices}
       actions={
         <ActionPanel>
