@@ -6,7 +6,9 @@
   "icon": "cap-icon.png",
   "author": "ItsEeleeya",
   "keywords": [
-    "Cap", "Screen Sharing", "Screen Recording"
+    "Cap",
+    "Screen Sharing",
+    "Screen Recording"
   ],
   "categories": [
     "Applications",
@@ -34,15 +36,15 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.72.1"
+    "@raycast/api": "^1.78.1"
   },
   "devDependencies": {
-    "@raycast/eslint-config": "^1.0.6",
+    "@raycast/eslint-config": "^1.0.8",
     "@types/node": "20.8.10",
-    "@types/react": "18.2.27",
-    "eslint": "^8.51.0",
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
+    "@types/react": "18.3.3",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
   },
   "scripts": {
     "build": "ray build -e dist",
