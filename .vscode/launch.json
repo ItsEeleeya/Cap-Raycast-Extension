@@ -97,7 +97,7 @@
             "preLaunchTask": "swift: Build Release CapExtensionHelper (swift/helper)"
         },
         {
-            "type": "lldb",
+            "type": "swift-lldb",
             "request": "launch",
             "sourceLanguages": [
                 "swift"
@@ -109,7 +109,7 @@
             "preLaunchTask": "swift: Build Debug CapExtensionHelper (swift/cap-extension-helper)"
         },
         {
-            "type": "lldb",
+            "type": "swift-lldb",
             "request": "launch",
             "sourceLanguages": [
                 "swift"

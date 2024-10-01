@@ -2,13 +2,14 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "cap-recorder",
   "title": "Cap Recorder",
-  "description": "Raycast shortcuts for Cap Recorder",
-  "icon": "cap-icon.png",
+  "description": "Raycast shortcuts for Cap",
+  "icon": "icon.png",
   "author": "ItsEeleeya",
   "keywords": [
     "Cap",
     "Screen Sharing",
-    "Screen Recording"
+    "Screen Recording",
+    "Screenshot"
   ],
   "categories": [
     "Applications",
@@ -33,24 +34,38 @@
       "title": "Open Dashboard",
       "description": "Open your Cap account's dashboard.",
       "mode": "no-view"
+    },
+    {
+      "name": "show-recordings",
+      "title": "Show Recordings Library",
+      "description": "View your Cap Recordings library.",
+      "mode": "view"
+    },
+    {
+      "name": "show-screenshots",
+      "title": "Show Screnshots Library",
+      "description": "View your Cap Screenshots library.",
+      "mode": "view"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.78.1"
+    "@raycast/api": "^1.83.1",
+    "@raycast/utils": "^1.17.0"
   },
   "devDependencies": {
-    "@raycast/eslint-config": "^1.0.8",
+    "@raycast/eslint-config": "^1.0.11",
     "@types/node": "20.8.10",
     "@types/react": "18.3.3",
     "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.3",
     "typescript": "^5.4.5"
   },
   "scripts": {
-    "build": "ray build -e dist",
+    "build": "ray build --skip-types -e dist -o dist",
     "dev": "ray develop",
     "fix-lint": "ray lint --fix",
     "lint": "ray lint",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
     "publish": "npx @raycast/api@latest publish"
   }
 }

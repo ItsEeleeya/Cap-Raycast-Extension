@@ -1,7 +1,13 @@
 import { closeMainWindow, getApplications, Keyboard, open, showHUD, showToast, Toast } from "@raycast/api";
+import path from "node:path";
+import os from "node:os";
 
-const CAP_BUNDLE_ID = "so.cap.desktop";
+export const CAP_BUNDLE_ID = "so.cap.desktop";
 const CAP_LINK_PROTOCOL = "caprecorder://";
+
+export const capBaseDir = path.join(os.homedir(), "Library", "Application Support", CAP_BUNDLE_ID);
+export const capRecordingsDir = path.join(capBaseDir, "recordings");
+export const capScreenshotsDir = path.join(capBaseDir, "screenshots");
 
 export async function launchCap(
   command: string,
